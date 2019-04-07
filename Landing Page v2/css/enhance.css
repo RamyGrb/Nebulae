@@ -1,0 +1,304 @@
+/*! GENERAL STYLE */
+html {background-color: #eaebec}
+body {
+  background-color: transparent;
+  font-family: Helvetica Neue;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 46px;
+  color: #434343;
+  font-weight: 100;
+}
+
+h4 {
+  color: #434343;
+  font-weight: 500;
+}
+
+p {
+  color: #777;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+}
+
+p.lead { font-weight: 200 }
+
+a.text-muted { color: #777 }
+
+/*! NAVBAR */
+.navbar-nebulae {
+  font-family: Helvetica Neue;
+  font-weight: 800;
+  font-size: 90%;
+}
+.navbar-nebulae a {
+  color:#434343;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 0px;
+}
+
+.navbar-brand {
+    padding-top: 15px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 30px;
+}
+
+/*! FONTS */
+@font-face {
+    font-family: "Didot";
+    src: url("../fonts/Didot/Didot.woff") format("woff");
+}
+@font-face {
+    font-family: "Didot";
+    src: url("../fonts/Didot/Didot-Bold.woff") format("woff");
+    font-weight: bold;
+}
+.Didot { 
+    font-family: Didot;
+}
+
+@font-face {
+    font-family: "HelveticaN";
+    src: url("../fonts/HelveticaN/helveticaneue.tff") format("truetype");
+}
+@font-face {
+    font-family: "HelveticaN";
+    src: url("../fonts/HelveticaN/helveticaneue-thin.tff") format("truetype");
+    font-weight: thin;
+}
+@font-face {
+    font-family: "HelveticaN";
+    src: url("../fonts/HelveticaN/helveticaneue-light.tff") format("truetype");
+    font-weight: light;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto-I";
+    src: url("../fonts/Roboto/Roboto-Italic.tff") format("truetype");
+    font-weight: italic;
+}
+@font-face {
+    font-family: "Roboto-T";
+    src: url("../fonts/Roboto/Roboto-Thin.tff") format("truetype");
+    font-weight: thin;
+}
+@font-face {
+    font-family: "Roboto-L";
+    src: url("../fonts/Roboto/Roboto-Light.tff") format("truetype");
+    font-weight: light;
+}
+@font-face {
+    font-family: "Roboto-M";
+    src: url("../fonts/Roboto/Roboto-Medium.tff") format("truetype");
+    font-weight: medium;
+}
+@font-face {
+    font-family: "Roboto-B";
+    src: url("../fonts/Roboto/Roboto-Bold.tff") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Roboto-Bl";
+    src: url("../fonts/Roboto/Roboto-Black.tff") format("truetype");
+    font-weight: black;
+}
+.Roboto { 
+    font-family: Roboto;
+}
+
+/*! SUBSCRIBE BUTTON */
+section {
+    padding: 100px 0;
+    text-align: center;
+}
+select.frecuency {
+    border: none;
+    font-style: italic;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .35s ease-in;
+    transition: -webkit-transform .35s ease-in;
+    border-bottom: none;
+}
+select.frecuency:focus {
+    outline: none;
+    border-bottom: 5px solid #39b3d7;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition: -webkit-transform .35s ease-in;
+    transition: -webkit-transform .35s ease-in;
+}
+.free {
+    text-transform: uppercase;
+}
+.input-group {
+    margin: 20px auto;
+    width: 100%;
+}
+
+.btn-lg {
+  font-family: Helvetica Neue;
+  font-weight: 100;
+}
+
+input.btn.btn-lg,
+input.btn.btn-lg:focus {
+    outline: none;
+    width: 40%;
+    height: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: left;
+}
+button.btn {
+    width: 20%;
+    height: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 400;  
+}
+.promise {
+    color: #999;
+}
+
+.btn-subscribe {
+  color: #ffffff;
+  background-color: #EDC726;
+  border-color: #EDC726;
+}
+.btn-subscribe:focus,
+.btn-subscribe.focus {
+  color: #ffffff;
+  background-color: #D3B539;
+  border-color: #D3B539;
+}
+.btn-subscribe:hover {
+  color: #ffffff;
+  background-color: #D3B539;
+  border-color: #D3B539;
+}
+.btn-subscribe:active,
+.btn-subscribe.active,
+.open > .dropdown-toggle.btn-subscribe {
+  color: #ffffff;
+  background-color: #D3B539;
+  border-color: #D3B539;
+}
+.btn-subscribe:active:hover,
+.btn-subscribe.active:hover,
+.open > .dropdown-toggle.btn-subscribe:hover,
+.btn-subscribe:active:focus,
+.btn-subscribe.active:focus,
+.open > .dropdown-toggle.btn-subscribe:focus,
+.btn-subscribe:active.focus,
+.btn-subscribe.active.focus,
+.open > .dropdown-toggle.btn-subscribe.focus {
+  color: #ffffff;
+  background-color: #D3B539;
+  border-color: #D3B539;
+}
+.btn-subscribe:active,
+.btn-subscribe.active,
+.open > .dropdown-toggle.btn-subscribe {
+  background-image: none;
+}
+.btn-subscribe.disabled:hover,
+.btn-subscribe[disabled]:hover,
+fieldset[disabled] .btn-subscribe:hover,
+.btn-subscribe.disabled:focus,
+.btn-subscribe[disabled]:focus,
+fieldset[disabled] .btn-subscribe:focus,
+.btn-subscribe.disabled.focus,
+.btn-subscribe[disabled].focus,
+fieldset[disabled] .btn-subscribe.focus {
+  background-color: #D3B539;
+  border-color: #D3B539;
+}
+.btn-subscribe.badge {
+  color: #D3B539;
+  color: #D3B539;
+  background-color: #ffffff;
+}
+
+/*! ANIMATIONS */
+@keyframes moving {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.planet-position {
+  position: absolute;
+  z-index: 0;
+  animation: moving 5s ease infinite;
+  height: 55%;
+  top: 0px;
+  bottom: 200px;
+  right: -65px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hands-position {
+  position: absolute;
+  z-index: -1;
+  height: 80%;
+  top: 0px;
+  bottom: -80px;
+  right: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.img-position {
+  vertical-align: middle;
+}
+
+.gafa-icons {
+  opacity: 0.75;
+}
+
+.network-background {
+  opacity: 0.2;
+}
+
+.people-position {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.scroll-body {
+height: 60vh;
+overflow-y: auto;
+}
+
+.body-fixed {
+overflow: hidden;
+}
